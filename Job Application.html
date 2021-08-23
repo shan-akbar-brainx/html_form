@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Job Application</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	.topnav {
+			overflow: hidden;
+			background-color: #800028;
+		}
+		input[type=text]{
+			margin: 10px 0 0 10px;
+			padding: 8px 20px;
+			float: right;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		select{
+			margin: 10px 0 0 10px;
+			padding: 8px 20px;
+			float: right;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			width:68%;
+		}
+		input[type=email]{
+			margin: 10px 0 0 10px;
+			padding: 8px 20px;
+			float: right;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			width: 68%;
+		}
+		input[type=tel]{
+			margin: 10px 0 0 10px;
+			padding: 8px 20px;
+			float: right;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		input[type=submit]{
+			width:15%;
+			padding: 12px 20px;
+			background-color: #800028;
+			color: white;
+			margin-left: 40%;
+			font-size: 125%;
+		}
+		input[type=file]{
+			margin: 10px 0 0 10px;
+			padding: 8px 20px;
+			float: right;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			width: 68%;
+		}
+		input[type=number]{
+			margin: 10px 0 0 10px;
+			padding: 8px 20px;
+			float: right;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		div {
+			width:40%;
+			margin-left:27%;
+			border-radius: 5px;
+			background-color: white;
+			padding: 20px;
+		}
+		label {
+			margin: 20px 0px;
+			font-family:arial;
+			font-size:125%;
+			display:inline-block;
+		}
+	</style>
+</head>
+<body>
+	<div class="topnav"></div>
+	<div class="main">
+		<h1 style="text-align:center;font-family:verdana;"><b>Job Application</b></h1>
+		
+		<form action="#" method="post">
+			<h2 style="color:#800028;font-family:verdana;">Personal Information</h2>
+			<label>Name</label>
+			<input type="text" id="lname" name="lname" placeholder="Last Name" style="width:33%;">
+			<input type="text" id="fname" name="fname" placeholder="First Name"style="width:33%;"><br>
+			
+			<label>Email</label>
+			<input type="email" id="email" name="email" placeholder="user@example.com"><br>
+			
+			<label>Education</label>
+			<select id="education" name="education">
+				<option value="" disabled selected>Please Choose</option>
+				<option value="Graduate">Graduate</option>
+				<option value="Intermediate">Intermediate</option>
+				<option value="Matric">Matric</option>
+			</select><br>
+			
+			<label>Resume</label>
+			<input type="file" id="resume" name="resume"><br>
+			
+			<label>Address</label>
+			<input type="text" id="add1" name="add1" style="width:68%;" placeholder="Address 1"><br>
+			<input type="text" id="add2" name="add2" style="width:68%;" placeholder="Address 2"><br>
+			
+			<select id="country" name="country" >
+				<option value="" disabled selected>Select a Country</option>
+				<option value="Islamabad">Islamabad</option>
+				<option value="Lahore">Lahore</option>
+				<option value="Karachi">Karachi</option>
+			</select><br>
+			
+			<input type="text" id="city" name="city" style="width:30%" placeholder="City">
+			<input type="text" id="state" name="state" style="width:15%" placeholder="state">
+			<input type="number" id="zip" name="zip" style="width:20%" placeholder="Zip Code"><br>
+			
+			<label style="margin-top:25%;">Phone Number</label>
+			<input type="tel" id="phone" name="phone" pattern="[0-9]{8}" style="width:53%;">
+			<input type="tel" id="code" name="code" pattern="[0-9]{3}" style="width:15%;"><br>
+			
+			<label style="margin-top:10%;">What are your hobbies?</label>
+			<input type="text" id="hobbies" name="hobbies" style="width:100%;margin-top:0%;"><br>
+			
+			<h2 style="color:#800028;font-family:verdana;margin-top:10%">Precious/Current Employment Details</h2>
+			
+			<label>Company Name</label>
+			<input type="text" id="cname" name="cname" style="width:60%;"><br>
+			
+			<label>Job Title</label>
+			<input type="text" id="jtitle" name="jtitle" style="width:60%;"><br>
+			
+			<label>How long were you here?</label>
+			<input type="text" id="period" name="period" style="width:60%;"><br>
+
+			<h2 style="color:#800028;font-family:verdana;">Reference #1</h2>
+			<label>Name</label>
+			<input type="text" id="name1" name="name1" style="width:60%;"><br>
+			<label>Phone</label>
+			<input type="tel" id="phone1" name="phone1" pattern="[0-9]{11}" style="width:60%;"><br>
+			
+			<h2 style="color:#800028;font-family:verdana;">Reference #2</h2>
+			<label>Name</label>
+			<input type="text" id="name1" name="name1" style="width:60%;"><br>
+			<label>Phone</label>
+			<input type="tel" id="phone1" name="phone1" pattern="[0-9]{11}" style="width:60%;"><br>
+			
+			<input type="submit" value="Apply">
+		</form>
+	</div>
+</body>
+</html>
